@@ -1,0 +1,156 @@
+{
+  "human_verified_headline": {
+    "agent": {
+      "intent": {
+        "accuracy": 0.16,
+        "n": 75,
+        "per_intent_recall": {
+          "device_troubleshooting": 0.06,
+          "billing_subscription": 0.0,
+          "repair_order_status": 0.2,
+          "feature_howto": 0.0,
+          "complaint_escalation": 0.0,
+          "account_access": 0.25,
+          "other_general": 1.0
+        }
+      },
+      "escalation": {
+        "tp": 11,
+        "fp": 58,
+        "fn": 2,
+        "tn": 4,
+        "precision": 0.15942028985507245,
+        "recall": 0.8461538461538461,
+        "f1": 0.2682926829268293,
+        "note": "fn (missed escalations) is the metric to watch most closely"
+      }
+    },
+    "trivial_baseline": {
+      "intent": {
+        "accuracy": 0.09333333333333334,
+        "n": 75,
+        "per_intent_recall": {
+          "device_troubleshooting": 0.0,
+          "billing_subscription": 0.0,
+          "repair_order_status": 0.0,
+          "feature_howto": 0.0,
+          "complaint_escalation": 0.0,
+          "account_access": 0.0,
+          "other_general": 1.0
+        }
+      },
+      "escalation": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 13,
+        "tn": 62,
+        "precision": NaN,
+        "recall": 0.0,
+        "f1": NaN,
+        "note": "fn (missed escalations) is the metric to watch most closely"
+      }
+    },
+    "simple_baseline": {
+      "intent": {
+        "accuracy": 0.16,
+        "n": 75,
+        "per_intent_recall": {
+          "device_troubleshooting": 0.06,
+          "billing_subscription": 0.0,
+          "repair_order_status": 0.4,
+          "feature_howto": 0.0,
+          "complaint_escalation": 0.0,
+          "account_access": 0.0,
+          "other_general": 1.0
+        }
+      },
+      "escalation": {
+        "tp": 4,
+        "fp": 2,
+        "fn": 9,
+        "tn": 60,
+        "precision": 0.6666666666666666,
+        "recall": 0.3076923076923077,
+        "f1": 0.42105263157894735,
+        "note": "fn (missed escalations) is the metric to watch most closely"
+      }
+    }
+  },
+  "full_first_pass_unverified": {
+    "agent": {
+      "intent": {
+        "accuracy": 0.325,
+        "n": 200,
+        "per_intent_recall": {
+          "device_troubleshooting": 0.07142857142857142,
+          "billing_subscription": 0.0,
+          "repair_order_status": 0.14285714285714285,
+          "feature_howto": 0.07692307692307693,
+          "complaint_escalation": 0.0,
+          "account_access": 0.3333333333333333,
+          "other_general": 1.0
+        }
+      },
+      "escalation": {
+        "tp": 37,
+        "fp": 148,
+        "fn": 4,
+        "tn": 11,
+        "precision": 0.2,
+        "recall": 0.9024390243902439,
+        "f1": 0.3274336283185841,
+        "note": "fn (missed escalations) is the metric to watch most closely"
+      }
+    },
+    "trivial_baseline": {
+      "intent": {
+        "accuracy": 0.26,
+        "n": 200,
+        "per_intent_recall": {
+          "device_troubleshooting": 0.0,
+          "billing_subscription": 0.0,
+          "repair_order_status": 0.0,
+          "feature_howto": 0.0,
+          "complaint_escalation": 0.0,
+          "account_access": 0.0,
+          "other_general": 1.0
+        }
+      },
+      "escalation": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 41,
+        "tn": 159,
+        "precision": NaN,
+        "recall": 0.0,
+        "f1": NaN,
+        "note": "fn (missed escalations) is the metric to watch most closely"
+      }
+    },
+    "simple_baseline": {
+      "intent": {
+        "accuracy": 0.325,
+        "n": 200,
+        "per_intent_recall": {
+          "device_troubleshooting": 0.07142857142857142,
+          "billing_subscription": 0.0,
+          "repair_order_status": 0.42857142857142855,
+          "feature_howto": 0.07692307692307693,
+          "complaint_escalation": 0.0,
+          "account_access": 0.2222222222222222,
+          "other_general": 0.9807692307692307
+        }
+      },
+      "escalation": {
+        "tp": 29,
+        "fp": 3,
+        "fn": 12,
+        "tn": 156,
+        "precision": 0.90625,
+        "recall": 0.7073170731707317,
+        "f1": 0.7945205479452054,
+        "note": "fn (missed escalations) is the metric to watch most closely"
+      }
+    }
+  }
+}
